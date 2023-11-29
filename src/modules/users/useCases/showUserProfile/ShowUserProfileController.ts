@@ -8,8 +8,6 @@ class ShowUserProfileController {
   handle(request: Request, response: Response): Response {
     const { user_id } = request.params;
 
-    console.log("TESTE COMMIT!");
-
     try {
       const userProfile = this.showUserProfileUseCase.execute({ user_id });
 
